@@ -1,0 +1,31 @@
+<script>
+  var score;
+  var year, month, day;
+  var address = "서울시";
+</script>
+<script>
+  let score;
+  let year, month, day;
+  let address = "서울시";
+</script>
+<script>
+  age = 21
+  let score;
+  score = 66.8;
+  score = "high"
+
+  /*
+    전역 변수 - 함수 밖에서 선언되거나 var/let키워드 없이 아무 곳에서나 선언된 변수
+    지역 변수 - 함수 내에서 var/let 키워드로 선언된 변수
+    블록 변수 - let 키워드로 if, while, for 등 블록 내에 선언된 변수
+  */
+</script>
+<script>
+  let x = 10;
+  function f() {
+    var x;
+    x = 1 // 지역 변수 x에 1 저장
+    this.x = 100 // 전역 변수 x에 100 저장
+    // let으로 선언된 전역변수는 this로 접근할 수 없음
+  }
+</script>
