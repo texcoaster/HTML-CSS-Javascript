@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>리터럴</title>
-  </head>
-  <body>
-    <h3>리터럴</h3>
-    <hr>
-    <script>
-      let oct = 015; // 015는 8진수 10진수로 13
-      let hex = 0x15; //0x15는 16진수 10진수로 21
-      let condition = true; // True로 하면 안됨
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>대입 연산</title>
+</head>
+<body>
+  <h3>대입 연산</h3>
+  <hr>
+  <script>
+    let x = 3, y = 3, z = 3;
+    document.write("x = " + x + ", y = " + y);
+    document.write(", z = " + z + "<br><br>");
 
-      document.write("8진수 015는 십진수로 " + oct + "<br>");
-      document.write("16진수 0x15는 십진수로 " + hex + "<br>");
-      document.write("condition은 " + condition + "<br>");
-      document.write('문자열 : 단일인용부호로도 표현' + "<br>");
-      document.write("그녀는 \"누구세요\"라고 했습니다");
-    </script>
-  </body>
+    x += 3; // x=x+3 -> x=6
+    y *= 3; // y=y*3 -> y=9
+    z %= 2; // z=z%2 -> z=1
+
+    document.write("x += 3; 실행 후, x = " + x + "<br>");
+    document.write("y *= 3; 실행 후, y = " + y + "<br>");
+    document.write("z %= 2; 실행 후, z = " + z)
+  </script>
+  
+</body>
 </html>

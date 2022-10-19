@@ -1,35 +1,22 @@
-<script>
-  var score;
-  var year, month, day;
-  var address = "서울시";
-</script>
-<script>
-  let score;
-  let year, month, day;
-  let address = "서울시";
-</script>
-<script>
-  age = 21
-  let score;
-  score = 66.8;
-  score = "high"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>리터럴</title>
+  </head>
+  <body>
+    <h3>리터럴</h3>
+    <hr>
+    <script>
+      let oct = 015; // 015는 8진수 10진수로 13
+      let hex = 0x15; //0x15는 16진수 10진수로 21
+      let condition = true; // True로 하면 안됨
 
-  /*
-    전역 변수 - 함수 밖에서 선언되거나 var/let키워드 없이 아무 곳에서나 선언된 변수
-    지역 변수 - 함수 내에서 var/let 키워드로 선언된 변수
-    블록 변수 - let 키워드로 if, while, for 등 블록 내에 선언된 변수
-  */
-</script>
-<script>
-  let x = 10;
-  function f() {
-    var x;
-    x = 1 // 지역 변수 x에 1 저장
-    this.x = 100 // 전역 변수 x에 100 저장
-    // let으로 선언된 전역변수는 this로 접근할 수 없음
-  }
-</script>
-<script>
-  const MAX = 10;
-  // const 상수
-</script>
+      document.write("8진수 015는 십진수로 " + oct + "<br>");
+      document.write("16진수 0x15는 십진수로 " + hex + "<br>");
+      document.write("condition은 " + condition + "<br>");
+      document.write('문자열 : 단일인용부호로도 표현' + "<br>");
+      document.write("그녀는 \"누구세요\"라고 했습니다");
+    </script>
+  </body>
+</html>
